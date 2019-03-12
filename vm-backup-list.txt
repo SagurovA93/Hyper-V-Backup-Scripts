@@ -1,0 +1,18 @@
+﻿VM name;VM id;month;day;number of copies;backup dir
+
+# - ignore lines started with '#'
+
+# Export VirtualMachine1 everyday and store last 7 copies
+# Ежедневный экспорт машины в локальную папку D:\VM_BACKUP и хранить 7 копий машины (1 на каждый день недели)
+VirtualMachine1;fbe4737d-2e48-447f-ba60-6577ff852cf4;*;*;7;D:\VM_BACKUP
+
+# Export VirtualMachine2 to \\server1\VM_BACKUP on monday - friday cycle and store last 5 copies
+# Экспортировать VirtualMachine2 в сетевую папку \\server1\VM_BACKUP с понедельника по пятницу и хранить 5 актуальных копий
+VirtualMachine2;b610e7e0-36c4-43f8-be52-d949be0be01f;*;mon,tue,wed,thu,fri;5;\\server1\VM_BACKUP;
+
+# Export VirtualMachine3 to \\server2\VM_BACKUP everyday on January 
+# Экспортировать Машину VirtualMachine3 в сетевую папку \\server2\VM_BACKUP каждый день в Январе и хранить 31 копию машины
+VirtualMachine3;24b2ee2f-4116-471b-92fa-e32797e532a0;1;*;31;\\server2\VM_BACKUP
+
+#mon,tue,wed,thu,fri,sat,sun
+#пн ,вт ,ср ,чт ,пт ,сб ,вс
